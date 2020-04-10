@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./swiper-5.3.6/package/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<style>
+    .loop {
+        width: 90%;
+        margin: auto;
+    }
+
+    .swiper-containe {
+        width: 100%;
+        height: 150px;
+
+    }
+
+    .swiper-slide {
+        width: 100%;
+        height: 150px;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <!--  头部  导航栏 -->
+        <header class="header clearfix ">
+            <div class="head ">
+                <span>登录</span>
+                <form action="">
+                    <input type="search" placeholder="大家正在搜索阿迪达斯adidas">
+                </form>
+                <img src="./images/suolvetu.png">
+            </div>
+        </header>
+        <!-- 导航栏 -->
+        <div class="nav ">
+            <div class="container">
+                <ul class="ulList">
+                    <li>今日推荐</li>
+                    <li>最后疯抢</li>
+                    <li>国际</li>
+                    <li>母婴</li>
+                    <li>美妆</li>
+                    <li>家电</li>
+
+                </ul>
+            </div>
+            <a href="#"></a>
+        </div>
+         <div class="product">
+            <!-- 轮播图 -->
+            <div class="loop">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/loop01.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/loop02.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/loop03.png" alt=""></div>
+
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- 导航 -->
+            <div class="nav-ul">
+                <!-- 上半部分 -->
+                <div class="nav-img">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <!-- 中部分 -->
+                <ul>
+                    <li>
+                        <img src="./images/nav0.png" alt="" />
+                        <p>分类查询</p>
+                    </li>
+                    <li>
+                        <img src="./images/nav1.png" alt="" />
+                        <p>物流查询</p>
+                    </li>
+                    <li>
+                        <img src="./images/nav2.png" alt="" />
+                        <p>购物车</p>
+                    </li>
+                    <li>
+                        <img src="./images/nav3.png" alt="" />
+                        <p>我的京东</p>
+                    </li>
+                    <li>
+                        <img src="./images/nav4.png" alt="" />
+                        <p>充值</p>
+                    </li>
+                    <li>
+                        <img src="./images/nav5.png" alt="">
+                        <p>领券中心</p>
+                    </li>
+                    <li>
+                        <img src="./images/nav6.png" alt="">
+                        <p>京东超市</p>
+                    </li>
+                    <li>
+                        <img src="./images/nav7.png" alt="">
+                        <p>我的关注</p>
+                    </li>
+                </ul>
+                <!-- 底部logo -->
+                <div class="nav-img">
+                    <img src="./images/fontPage.png" alt="">
+                </div>
+            </div>
+            <!-- 产品展示 -->
+            <div class="product_two clearfix">
+                <div class="product_shoppingBottom">
+                    <div>
+                        <img src="./images/product01.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./images/product02.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./images/product03.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product_gwc">
+                <div>
+                    <img src="./images/shopcar.png" alt="">
+                </div>
+            </div>
+        </div>
+      
+    </div>
+
+</body>
+<script src="./swiper-5.3.6/package/js/swiper.min.js"></script>
+<script src="./js/index.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        autoplay: true,
+        direction: 'horizontal',
+        speed: 1000,
+    });
+</script>
+
+</html>
